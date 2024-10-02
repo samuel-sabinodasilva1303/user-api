@@ -23,31 +23,29 @@ Este projeto consiste em uma aplicação desenvolvida com **Laravel** no backend
 ## Instalação e Configuração
 Siga as instruções abaixo para configurar o projeto localmente.
 
-1. **Clone o repositório**
-    ```bash
-    git clone https://github.com/samuel-sabinodasilva1303/user-api
-    ```
+1. **Clone o repositório**  
+   `git clone https://github.com/samuel-sabinodasilva1303/user-api`  
+   `cd user-api`
 
-2. **Instale as dependências do PHP**
-    ```bash
-    composer install
-    ```
+2. **Instale as dependências do PHP**  
+   `composer install`
 
-3. **Instale as dependências do Node.js**
-    ```bash
-    npm install
-    ```
+3. **Instale as dependências do Node.js**  
+   `npm install`
 
-4. **Build e rode o servidor de desenvolvimento**
-    Execute o Vite para processar os arquivos JavaScript/Vue.js:
-    ```bash
-    npm run dev
-    ```
-    Em seguida, rode o servidor Laravel:
-    ```bash
-    php artisan serve
-    ```
-    Acesse a aplicação em [http://localhost:8000](http://localhost:8000).
+4. **Configure o arquivo .env**  
+   Copie o arquivo `.env.example` para `.env`:  
+   `cp .env.example .env`
+
+5. **Gere a chave da aplicação**  
+   `php artisan key:generate`
+
+6. **Build e rode o servidor de desenvolvimento**  
+   Execute o Vite para processar os arquivos JavaScript/Vue.js:  
+   `npm run dev`  
+   Em seguida, rode o servidor Laravel:  
+   `php artisan serve`  
+   Acesse a aplicação em [http://localhost:8000](http://localhost:8000).
 
 ## Estrutura do Projeto
 - **Backend (Laravel)**: O backend é responsável por fornecer a página inicial e processar a requisição para a API.
@@ -60,5 +58,5 @@ Siga as instruções abaixo para configurar o projeto localmente.
 3. A interface exibe os usuários em grupos por estado na página inicial, com os dados estilizados.
 
 ## Estilização
-A estilização dos dados é feita utilizando CSS básico no arquivo `resources/css/app.css`
+A estilização dos dados é feita utilizando CSS básico no arquivo `resources/css/app.css`.
 
