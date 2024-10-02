@@ -26,7 +26,6 @@ Siga as instruções abaixo para configurar o projeto localmente.
 1. **Clone o repositório**
     ```bash
     git clone https://github.com/samuel-sabinodasilva1303/user-api
-    cd nome-do-repositorio
     ```
 
 2. **Instale as dependências do PHP**
