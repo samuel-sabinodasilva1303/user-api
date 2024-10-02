@@ -40,7 +40,19 @@ Siga as instruções abaixo para configurar o projeto localmente.
 5. **Gere a chave da aplicação**  
    `php artisan key:generate`
 
-6. **Build e rode o servidor de desenvolvimento**  
+6. **Configure o banco de dados**  
+   Configure o banco de dados no arquivo `.env`. Caso esteja usando SQLite, você pode criar o arquivo `database.sqlite` no diretório `database`:  
+   `touch database/database.sqlite`  
+   Atualize o `.env` com:  
+   
+    `DB_CONNECTION=sqlite`
+    `DB_DATABASE=/caminho/absoluto/para/database.sqlite`
+
+7. **Execute as migrações**  
+`php artisan migrate`
+
+
+8. **Build e rode o servidor de desenvolvimento**  
    Execute o Vite para processar os arquivos JavaScript/Vue.js:  
    `npm run dev`  
    Em seguida, rode o servidor Laravel:  
