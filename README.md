@@ -42,7 +42,7 @@ Siga as instruções abaixo para configurar o projeto localmente.
 6. **Configure o banco de dados**  
    Configure o banco de dados Sqlite no arquivo `database.sqlite` no diretório `database`. No terminal execute:
    `touch database/database.sqlite`:
-    
+
    Atualize o `.env` com:  
     `DB_DATABASE=/caminho/absoluto/para/database.sqlite`:
 
@@ -54,7 +54,7 @@ Siga as instruções abaixo para configurar o projeto localmente.
    Execute o Vite para processar os arquivos JavaScript/Vue.js:  
    `npm run dev`  
 
-   Em seguida, rode o servidor Laravel:  
+   Em seguida, rode o servidor Laravel, em um novo terminal:  
    `php artisan serve`  
 
    Acesse a aplicação em [http://localhost:8000](http://localhost:8000).
